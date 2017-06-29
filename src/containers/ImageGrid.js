@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ImageBlock from '../components/ImageBlock';
+import ImageBlock from './ImageBlock';
 
 class ImageGrid extends Component {
     render() {

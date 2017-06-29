@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import logo from '../images/logo.svg';
 import '../containers/App.css';
 import Search from '../components/Search';
-import ShowMore from '../components/ShowMore';
-import ImageGrid from '../components/ImageGrid';
-import LoadingGif from '../components/LoadingGif';
+import ShowMore from '../containers/ShowMore';
+import ImageGrid from '../containers/ImageGrid';
+import LoadingGif from '../containers/LoadingGif';
 import axios from '../../node_modules/axios/dist/axios';
 
 class App extends Component {
