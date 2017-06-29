@@ -3,7 +3,7 @@ import Search from '../components/Search';
 import ShowMore from '../containers/ShowMore';
 import ImageGrid from '../containers/ImageGrid';
 import LoadingGif from '../containers/LoadingGif';
-import axios from '../../node_modules/axios/dist/axios';
+import GiphyService from '../containers/GiphyService';
 
 // The main search component
 class ImageSearch extends Component {
@@ -43,7 +43,7 @@ class ImageSearch extends Component {
         }
 
         // we make a call to giphy to get the search results
-        axios.get(`http://api.giphy.com/v1/gifs/search?q=${encodeURI(tags.replace("#", ""))}&api_key=dc6zaTOxFJmzC&limit=${limit}&offset=${page * 25}`).then(res => {
+        GiphyService().list(tags, page, limit).then(res => {
             const urls = res.data.data.map(obj => {
                 // based on which size the user has selected we load the appropriate image
                 switch (imgSize) {
