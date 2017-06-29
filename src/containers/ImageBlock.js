@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 
+// Responsible for showing a single block in the image grid
 class ImageBlock extends Component {
     render() {
+        // show the different block based on the images size selected by the user
         switch (this.props.imgSize) {
             case "medium":
                 return <div className="imageGridMedium">
