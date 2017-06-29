@@ -21,7 +21,6 @@ class ImageSearch extends Component {
         };
 
         // .bind(this) binds this to the function, so when we refer to this.loadMore in this.loadNextPage it get the function
-        this.loadMore = this.loadMore.bind(this);
         this.resetSearch = this.resetSearch.bind(this);
         this.loadNextPage = this.loadNextPage.bind(this);
     }
