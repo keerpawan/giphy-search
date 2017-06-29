@@ -3,7 +3,7 @@ import Search from '../components/Search';
 import ShowMore from '../containers/ShowMore';
 import ImageGrid from '../containers/ImageGrid';
 import LoadingGif from '../containers/LoadingGif';
-import GiphyService from '../containers/GiphyService';
+import GiphyService from '../services/GiphyService';
 
 // The main search component
 class ImageSearch extends Component {
