@@ -64,6 +64,11 @@ class ImageSearch extends Component {
                 init: false,
                 loading: false
             });
+        }, error => {
+            this.setState({
+                loading: false
+            });
+            alert("Sorry an error has occured. Could not complete request.");
         });
     }
 
