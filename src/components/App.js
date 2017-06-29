@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import logo from '../images/logo.svg';
-import '../containers/App.css';
+import '../styles/App.css';
 import ImageSearch from '../components/ImageSearch';
 
 // This is the main App Component
