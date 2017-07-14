@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from '../images/logo.svg';
 import '../styles/App.css';
 import ImageSearch from '../components/ImageSearch';
 
@@ -12,7 +11,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
+                    <h1>Giphy Image Search</h1>
                 </div>
 
                 <ImageSearch />
