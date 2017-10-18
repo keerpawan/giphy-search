@@ -11,7 +11,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <h1>Giphy Image Search 2</h1>
+                    <h1>Giphy Image Search</h1>
                 </div>
 
                 <ImageSearch />
