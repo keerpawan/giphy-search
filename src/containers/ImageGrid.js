@@ -15,7 +15,7 @@ function ImageGrid(props) {
     }
     // display no images found if the length of the props images is 0
     else if (!props.init) {
-        return <div className="noImages">No Images Found</div>;
+        return <div className="noImages">No Images Found 2</div>;
     }
     // user has not made any searches yet
     else {
